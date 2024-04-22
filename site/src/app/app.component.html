@@ -56,11 +56,11 @@
     [homeData]="appData.sectionFeatures"
   ></app-home>
 
-  <app-about *ngIf="currentPage === 'ABOUT'"></app-about>
+  <app-about *ngIf="currentPage === 'ABOUT'" [aboutData]="appData.sectionAbout"></app-about>
 
-  <app-address *ngIf="currentPage === 'ADDRESS'"></app-address>
+  <app-address *ngIf="currentPage === 'ADDRESS'" [addressData]="appData.sectionAddress"></app-address>
 
-  <app-contact *ngIf="currentPage === 'CONTACT'"></app-contact>
+  <app-contact *ngIf="currentPage === 'CONTACT'" [contactData]="appData.sectionContact"></app-contact>
 </main>
 <!-- End Main -->
 
